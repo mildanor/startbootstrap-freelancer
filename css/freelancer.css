@@ -68,12 +68,23 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
   color: white;
+  background: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+    ),
+        /* bottom, image */
+    url(/img/lala.jpg);
+    background-size: cover;
+    margin: 0px 0 0px 0px;
+
+
+
 }
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
+
 }
 header img {
   display: block;
@@ -181,7 +192,10 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+background: #5D4157; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #5D4157 , #A8CABA); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #5D4157 , #A8CABA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
   color: white;
 }
 @media (max-width: 767px) {
@@ -403,7 +417,7 @@ fieldset[disabled] .btn-success.active {
   border-color: #18BC9C;
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: #5D4157;
   background-color: white;
 }
 .btn-social {
