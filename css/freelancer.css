@@ -67,6 +67,7 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 header {
+  height: 70vh;
   text-align: center;
   color: white;
   background: linear-gradient(
@@ -74,7 +75,7 @@ header {
             rgba(0, 0, 0, 0.45)
     ),
         /* bottom, image */
-    url(/img/lala.jpg);
+    url(/img/lala.jpg) no-repeat right;
     background-size: cover;
     margin: 0px 0 0px 0px;
 
