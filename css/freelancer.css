@@ -67,7 +67,7 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 header {
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   color: white;
   background: linear-gradient(
@@ -583,10 +583,10 @@ div#maincontent {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  background-color: #E4D8F0;
   color: white;
   border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  border: 4px solid #f1f1f1;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -616,10 +616,13 @@ div#maincontent {
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
+  color: rgb(44, 62, 80);
+
 }
 .timeline .timeline-heading h4.subheading {
-  text-transform: none;
+  
+  color: rgb(44, 62, 80);
+
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
@@ -695,4 +698,7 @@ div#maincontent {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
+}
+.text-muted {
+    color: #FBFAFC;
 }
