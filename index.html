@@ -21,6 +21,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,10 +53,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                      <li class="page-scroll">
                         <a href="#experience">Experience</a>
@@ -63,9 +64,9 @@
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
-                    <li class="page-scroll">
+                    <!-- <li class="page-scroll">
                         <a href="https://drive.google.com/file/d/0B8j3jaFQoUS_b213TlBlTHh4VEk/view?usp=sharing">CV</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -77,18 +78,25 @@
     <header>
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6 col-sm-12">
                    
                     <div class="intro-text">
-                        <span class="skills">User Experience Designer and Researcher - Front End Developer</span>
-                        
-                        <h1 class="name">Milda Norkute</h1>
+                        <h1 class="name">Hi, I'm Milda</h1> 
+                        <br>
+                        <span class="name"> <h3> User Experience Designer</h3>
+                            <h3> Researcher </h3>
+                            <h3>Front End Developer </h3>
+                        </span>
                     </div>
+                    </div>
+                     </div>
+             <div class="row">
+           
                 </div>
-            </div>
-        </div>
+           </div>
+        
     </header>
-        <!-- About Section -->
+    <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
             <div class="row">
@@ -99,12 +107,23 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>I am a Human Computer Interaction and Design student at Aalto university with a psychology background and three years of both market and academic research experience in London and New Zealand. </p>
-
-                    <p> Curently I am studying a double masters degree at EIT Digital Masters School, my major is in technology and my minor is business and enterpreneurship.  </p>
+                <div class="col-lg-6 col-sm-6 ">
+                    <p>Human Computer Interaction and Design student at KTH Royal Institute of Technology majoring in technology, minoring in business with psychology background and 3 years of market and academic research experience in London and New Zealand. 
+                      <br>   </p>
+                    <br> 
                     <p> My passion is making user interfaces look good and work as good as they look by drawing on my psychology knowledge, technology and design skills. </p>
+                    <br>
+                    <p>
+                        DESIGN SKILLS:   Adobe XD, Illustrator, InDesign, Photoshop, Sketch, Balsamiq. </p>
+                       
+                       <p> TECHNOLOGY:   Javascript, React.js, CSS3, HTML5, Git. Also some basic Arduino and backend - Firebase, MongoDB and node.js knowledge.
+                    </p>
+                       <p> OTHER:   Stats lover - SPSS and R, Photography. </p>
                 </div>
+                <div class="col-sm-6">
+                <img src="img/projects2017/TK1.png" class="img-responsive secondd">
+                </div>
+                
                 
                 
             </div>
@@ -112,7 +131,7 @@
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="fancy">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -120,8 +139,39 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
+            <div class="text-center">
+                 <button class="btn btn-primary filter-button" data-filter="all">All</button>
+               <button class="btn btn-primary filter-button" data-filter="design">Design</button>
+                <button class="btn btn-primary filter-button" data-filter="coding">Coding</button>
+                <button class="btn btn-primary filter-button" data-filter="research">Research</button>
+                 <button class="btn btn-primary filter-button" data-filter="business">Business modelling</button>
+                 <button class="btn btn-primary filter-button" data-filter="statistics">Statistics</button>
+
+    <br>
+        <br>
+            </div>
+                <div class="row">
+                <div class="col-sm-4 portfolio-item filter coding design">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects2017/farmate.png" class="img-responsive firstt" alt="Cabin">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item filter design research business">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects2017/IT2H.png" class="img-responsive firstt" alt="Slice of cake">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item filter design research coding">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -130,50 +180,16 @@
                         </div>
                         <img src="img/portfolio/jammin.png" class="img-responsive firstt" alt="Cabin">
                     </a>
+               <!--
+               <div class="portfolio-caption">
+                      <h4>Jammin</h4>
+                      <p class="text-muted">Web app for finding musicians to play with</p>
+                  </div>
+                  -->
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/uic.png" class="img-responsive firstt" alt="Slice of cake">
-                    </a>
                 </div>
-                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/digelius.png" class="img-responsive firstt" alt="Circus tent">
-                    </a> 
-                </div> 
-                </div>
-                 <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/jungtion.jpg" class="img-responsive firstt" alt="Game controller">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/phone.jpg" class="img-responsive firstt" alt="Safe">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
+            <div class="row">
+            <div class="col-sm-4 portfolio-item filter design research coding business">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -183,11 +199,62 @@
                         <img src="img/portfolio/roomiego.png" class="img-responsive firstt" alt="Submarine">
                     </a>
                 </div>
+                <div class="col-sm-4 portfolio-item filter design research coding">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects2017/CaneBB3.jpg" class="img-responsive firstt" alt="Slice of cake">
+                    </a>
+                </div>
+                 <div class="col-sm-4 portfolio-item filter design research">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/digelius.png" class="img-responsive firstt" alt="Circus tent">
+                    </a> 
+                </div> 
+            </div>
+                 <div class="row">
+                <div class="col-sm-4 portfolio-item filter design coding">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/jungtion.jpg" class="img-responsive firstt" alt="Game controller">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item filter research statistics">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects2017/Voice-icon.png" class="img-responsive firstt" alt="Safe">
+                    </a>
+                </div>
+                  <div class="col-sm-4 portfolio-item filter design">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/uic.png" class="img-responsive firstt" alt="Slice of cake">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-
-
+    
     <section class="success" id="experience">
      <div class="container">
             <div class="row">
@@ -202,15 +269,43 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/projects2017/KTH.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2017 Autumn - Present</h4>
+                                    <h4 class="subheading">Master Student at KTH Royal Institute of Technology, Stokcholm, Sweden</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Second year of EIT Digital Masters Degree. Majoring in mobile and ubiquitous user interface design and development.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/projects2017/nokia.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2017 Summer</h4>
+                                    <h4 class="subheading">Summer Intern at Nokia, Espoo, Finland</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">My main tasks were UI design for IoT device management systems for different types of users. I also worked on the implementation of one of the UIs using React.js & CSS3.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/aaltoo.png" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2016-Present</h4>
-                                    <h4 class="subheading">Masters student at Aalto University, Helsinki, Finland</h4>
+                                    <h4>2016-2017 Summer</h4>
+                                    <h4 class="subheading">Master student at Aalto University, Helsinki, Finland</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">The first year of EIT Digital Master School, majoring in Human Computer Interaction and Design; minoring in Innovation and Entrepreneurship.</p>
+                                    <p class="text-muted">The first year of EIT Digital Master School, majoring in Human Computer Interaction and Design; minoring in Business & Innovation.</p>
                                 </div>
                             </div>
                         </li>
@@ -224,7 +319,7 @@
                                     <h4 class="subheading">Research Executive at Newsworks, London, UK</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Newsworks is the marketing body for national UK newspapers. Its aim is to encourage advertisers to advertise in the press. I worked on and managed the execution of Newsworks’ qualitative and quantitative research projects exploring advertising effectiveness. I initiated an academic partnership with University of Bath and was a leader of 3 research projects.</p>
+                                    <p class="text-muted">Newsworks is the marketing body for national UK newspapers. Its aim is to encourage advertisers to advertise in the press. I worked on Newsworks’ qualitative and quantitative research projects exploring advertising effectiveness. I initiated an academic partnership with University of Bath and was a leader of 3 research projects.</p>
                                 </div>
                             </div>
                         </li>
@@ -252,11 +347,11 @@
                                     <h4 class="subheading">Research Assistant at New Zealand Institute of Language Brain and Behaviour, Christchurch, New Zealand</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Internship year as part ofmy bachelor's degree. I was involved in multiple academic research projects at the same time looking into gestures, speech, emotions and others. My tasks included designing research materials, running focus groups, conducting interviews, testing people in the lab, analysing data, writing up the reports and research proposals, and presenting findings to the research team in the lab meetings.</p>
+                                    <p class="text-muted">Internship year, part of my bachelor's degree. I was involved in multiple academic research projects looking into gestures, speech, emotions and others. My tasks included designing research materials, running focus groups, conducting interviews, testing people in the lab, analysing data, writing up the reports and research proposals, and presenting findings to the research team.</p>
                                 </div>
                             </div>
                         </li>
-                         <li class="timeline-inverted">
+                         <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="img/bath.png" alt="">
                             </div>
@@ -278,7 +373,6 @@
         </div>
     </section>
     </section>
-
     <!-- Contact Section 
     <section id="contact">
         <div class="container">
@@ -355,9 +449,32 @@
             </div>
         </div>
     </section>
-
+ <!-- Pro BONO 
+ <section class ="probono" id="probono">
+     <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Pro Bono Work</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-4 ">
+                    <h3> Lithuanian Youth Association in the UK</h3>
+                    <p> My passion is making user interfaces look good and work as good as they look by drawing on my psychology knowledge, technology and design skills. </p>
+                    <br>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Outreach Digital </h3>
+                    <p> Lalalal</p>
+                </div>
+            </div>
+        </div>
+</section>
+-->
     <!-- Contact -->
-    <section class="portfolio" id="contact">
+    <section class="fancy" id="contact">
         <div class="container">
             <div class="row">
             <div class="col-lg-12 text-center">
@@ -422,14 +539,18 @@
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
                             </li> -->
                             <li>
-                                <a href="https://twitter.com/milda_nor" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/milda_nor" target="_blank" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/milda-norkute-UX/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/milda-norkute-UX/" target="_blank" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="https://github.com/mildanor" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/mildanor" target="_blank" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-github"></i></a>
                             </li>
+                             <li>
+                                <a href="https://www.instagram.com/milda_nor" target="_blank" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+
                         </ul>
                     </div>
                     <!--
@@ -484,12 +605,12 @@
                            <p> Next we created low fidelity prototypes using Balsamiq.  We presented them to the users during low fidelity prototype testing. </p>
                             <img src="img/jammin2.png" class="img-responsive img-centered" alt="">
                            <p> We asked users for feedback on features we were planning on developing and the user journey.
-                            We developed Jammin using HTML5, CSS3 and React.js. Since our focus was usability we used firebase for back end.</p>
+                            We developed Jammin using <b> HTML5, CSS3 and React.js. </b> Since our focus was usability we used firebase for back end.</p>
                             <img src="img/jammin3.jpg" class="img-responsive img-centered" alt="">
                             <p> For high fidelity prototype testing, we used a semi developed version of the service. We asked participants to find someone to jam with in the city of Helsinki and to think aloud during testing and comment of their actions. We changed and provided better explanations on the steps users need to take when creating the profile on the site on the basis of received feedback. </p>
                              
                             <p>I have only started learning web development techniques when we started the project, never have coded before, independently, so for me this project was an incredibly steep learning curve not only in user research and testing but also in learning web development HTML5, CSS and Javascript. By the way Jammin is fully a responsive web application.  </p>
-                            <p> <a href="http://jammin-e10be.firebaseapp.com"> Check it out</a>. </p>
+                            <p> <a href="http://jammin-e10be.firebaseapp.com" target="_blank"> Check it out</a>. </p>
                             <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
@@ -504,7 +625,7 @@
                                     </strong>
                                 </li>
                             </ul> -->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -531,7 +652,7 @@
                             <p> The app interface was designed following Android guidelines. It was interesting an challenging to design for a user aless familiar with technology and for a context that was not as known to me.</p>
 
 
-                            <p><a href="https://drive.google.com/file/d/0B6KggdV6WSWcVTU4OVdMMjlCNDA/view?usp=sharing"> 
+                            <p><a href="https://drive.google.com/file/d/0B6KggdV6WSWcVTU4OVdMMjlCNDA/view?usp=sharing" target="_blank"> 
                           Check out the mock up</a> </p> 
                           <p> You need to download it for it to be interactive.</p>
 
@@ -549,7 +670,7 @@
                                     </strong>
                                 </li>
                             </ul> -->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -597,7 +718,7 @@
                                     </strong>
                                 </li>
                             </ul> -->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -626,7 +747,7 @@
                     <p> I developed the front – end using html/css and created the designs. </p>
 
                             
-                            <p><a href="https://github.com/jpbreuer/junction2016/tree/master/front_end">Check it out on github</a>. </p>
+                            <p><a href="https://github.com/jpbreuer/junction2016/tree/master/front_end " target="_blank"> Check it out on github</a>. </p>
                             <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
@@ -641,7 +762,7 @@
                                     </strong>
                                 </li>
                             </ul> -->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -667,29 +788,16 @@
 
 
                     <p> I created 3 voice recordings. I recorded one mid-pitch sounding female, and manipulated her voice with R to make it sound higher and lower by approx. 20 Hz.
-                    I also created two CVs, one high one low quality. I tested them to with people to ensure there was enough difference between them. </p>
-                    <p> I set up online survey, where first the participants listened to one of the recordings where the candidate imitated leaving a voice message on the phone. Then I presented them with one of two CVs. Later a set of questions was asked. Each participant only listened to one recording and saw one CV, so a lot of data had to be collected to get enough responses for all – high, low pitch and CV quality conditions.</p>
+                    I also created two CVs, one high one low quality. I pilot tested them. </p>
+                    <p> Then I set up online survey, where first the participants listened to one of the recordings where the candidate imitated leaving a voice message on the phone. Then I presented them with one of two CVs. Later a set of questions was asked. Each participant only listened to one recording and saw one CV, so a lot of data had to be collected to get enough responses for all – high, low pitch and CV quality conditions.</p>
                     <img src="img/CVthing.png" class="img-responsive img-centered" alt="">
+                    <p> In total I collected 325 responses. I conducted Exploratory Factory Analysis and Univariate Analysis of Variance on the data. </p>
                     <p> I found that males preferred the lower pitched female candidate whereas females preferred the high pitched candidate. I found that this corresponds to the Social Identity Theory of Leadership which suggests that people prefer leaders who represent their group traits and are similar to them. </p>
                     <p>However, I also found that this only had an effect when the applicant’s CV was of high quality. On one hand this is good news since this means that even sounding like a leader won’t get you selected if your qualifications are poor. On the other, voice does have an effect. Of course it is probably only a small one, among all other factors but employers should be made aware as much as possible of this type of existing biases. </p>
 
                     <p> <b> I was awarded the best dissertation award by the University of Bath Psychology department for this project.</b></p>
 
-                           <!--  <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul> -->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -711,9 +819,22 @@
                             <h2>Roomiego</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/roomiego.png" class="img-responsive img-centered" alt="">
-                            <p>Roomiego is a flatmate matching and search engine we are currently working on developing as a start up in a team of 5 that I am leading. At the moment, it is included in this portfolio to showcase the styling and front end work I did on the website explaining how the system would work. In the near future more details about the service and business model design will be included. </p>
+                            <p>For our Start Up Experience course at Aalto University we had to find, test and develop a new service idea. Also, we had to go through the process of setting up a start-up in parallel including discussions on company values, shareholders agreement etc. I decided to participate as a CEO, meaning that I was responsible for team recruitment, building and our overall performance. </p>
 
-                            <p> <a href="http://roomiego.github.io">Check out Roomiego website</a></p>
+<p>To inform the development of our idea we conducted interviews, developed a landing page to test the different pricing models, launched an intensive two weeks social media campaign, followed by real life experiment with people selecting their flatmate preferences using the simplified version of the gamified solution we worked on creating as means of testing it.</p>
+<img src="img/projects2017/Roomiego1.png" class="img-responsive img-centered" alt="">
+<p> I was involved in every task, from creation of landing page and social media channels to suggesting and designing the solutions and research probes required to test our idea, creating the pitches every two weeks to present the progress of our work. 
+ </p>
+
+                            <p> Check out <a href="http://roomiego.github.io" target="_blank"> Roomiego website</a></p>
+                           <p> Also, feel free to check out our <a href="https://docs.google.com/presentation/d/14vornz6G1Pz_GsIzQ3bKSqsFQQCNuReNurTfQguOiaM/edit?usp=sharing" target="_blank"> final pitch </a> (click play to see all animations)
+<p> And the project’s marketing video: </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F-aSutafaj0" frameborder="0" allowfullscreen></iframe> 
+<br>
+<br>
+<p>
+We were one of the top two performing teams according to our teachers. However, after 3 months when the course finished we decided not to continue the idea because although the product-market fit was good, the market size in Finland was too small and a rather large initial investment would be required to be able to scale to other countries to make the business profitable, as informed by our cashflow calculations.
+</p>
                             <!-- <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
@@ -728,7 +849,116 @@
                                     </strong>
                                 </li>
                             </ul> -->
-                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button id="btnSubmit" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>NASA Europa Challenge 2017: Farmate</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects2017/farmate.png" class="img-responsive img-centered" alt="">
+                         <p> During the summer 2017 in a team of 3 we set out to participate in NASA Europa Challenge 2017. We had to find a problem to solve and build a solution for it on top of NASA’s world wind platform.
+                        </p>
+<p>We decided to implement a system that helps farmers to determine how much irrigation they need to do every day.
+</p>
+<p>We researched academic papers to find a suitable formula, designed our database, backend and front end on that basis. We decided on using React.js for front-end, python and firebase for back-end.
+</p>
+<p>I was working on the front end with <b> react.js and CSS3 </b>.
+</p>
+<p><a href="https://abhishek-rs.github.io/farmate/" target="_blank">  Check it out </a></p>  
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Tavarat Kotiin - Items2Home</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects2017/TKsummary.png" class="img-responsive img-centered" alt="">
+                            <p>For our 5 month long design project course at Aalto, we had to develop and prototype a concept of a new service in the field of urban mobility. 
+                                </p>
+                            <p>The focus of the first sprints was finding problems worth solving through extensive user research in mobility area. The problem we decided on solving was exchange of big second hand items bought online. Especially in Finland most of the delivery options available are really expensive. We decided to challenge that by creating a service which does multiple deliveries on the same route by combining pick ups from multiple seller and delivering to multiple buyers. 
+                            </p>
+                    <img src="img/projects2017/TK_Concept.png" class="img-responsive img-centered" alt="">
+                   <p> We conducted 64 experiments informing the development of our concept: both the user interface of the web service as well as the business model and how the communication on the delivery days would work.
+                    </p>
+                    <p> We got the highest possible grade for our work and a special mention for exceptionally high quality materials and well informed experiments.
+                        </p>
+                        <p><b>Video of me doing the final presentation of our concept: </b>
+                            </p>
+                        <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/8W8ewiJeE6Y" frameborder="0" allowfullscreen></iframe>
+                        </p>
+                        <p> I was leading most of our experiments in our team of 5 people. I created many of the experiment materials including low-fidelity prototypes, scenarios, questionnaires and other probes. I also created the designs of handouts, posters (Adobe InDesign & Photoshop), and 7/10 of our presentations. In addition, to this I created the first version of our web service prototype using Adobe XD and shaped the design of our second and third prototype iterations.
+                        </p>
+                        <img src="img/projects2017/TKUI2.png" class="img-responsive img-centered" alt="">
+                        <!-- <img src="img/projects2017/TK Testing.jpg" class="img-responsive img-centered" alt=""> -->
+                        <p>To find out more about our concept visit our <a href="https://item2home.wordpress.com/" target="_blank"> landing page </a> which also contains link to our final prototype.
+                            </p> <br>
+
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cane Buddy</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects2017/CaneBB3.jpg" class="img-responsive img-centered" alt="">
+                            <p> For Emergent User Interfaces Course at Aalto in a team of 5 we were building a device helping blind people navigate the environment.
+                            </p>
+                            <p>While our initial idea was to build a glove with ultrasound sensors the sense the objects in the environment and give feedback about them using vibration motors, using Arduino Pro Mini. Our initial idea was to replace the white cane, however soon we realised that would be impossible due to the richness of feedback the cane is able to provide as well as its other important meanings such as being a sign to the motorists that a blind person is attempting to cross the road. 
+                            </p>
+                    <img src="img/projects2017/Emergent1.png" class="img-responsive img-centered" alt="">
+                    <p>After building the glove prototype and testing it ourselves, me and another team members also took the our device to the Finnish Association of Visually Impaired and tested it with 5 visually impaired users. We discovered that it would be more beneficial to place the device somewhere higher, as positioning it on the hand overlaps with the feedback the cane already provides. Therefore our final product ended up being a necklace, using the same technology as previously.
+                    </p>
+                    <img src="img/projects2017/Emergent2.png" class="img-responsive img-centered" alt="">
+                    <p>I initiated collaboration with Finnish Association of Visually Impaired, conducted the user testing, initiated the pivoting from glove to necklace, assisted with programming in Arduino IDE, designed the handout and presentations for the demo gala. I also did an individual course on Arduino UNO on Coursera to better prepare for working on this project prior to starting the course.
+                    </p>
+                    <p> Project video: </p>
+                    <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/v6peJg4k6j8" frameborder="0" allowfullscreen></iframe>
+                            </p>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
