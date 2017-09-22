@@ -84,7 +84,7 @@ header {
 
   section.probono {
   padding: 100px 0;
-  height: 80vh;
+  height: 100%;
   text-align: center;
   color: white;
   background: linear-gradient(
@@ -92,7 +92,7 @@ header {
             rgba(0, 0, 0, 0.45)
     ),
         /* bottom, image */
-    url(/img/JKLJS.jpg) no-repeat center;
+    url(/img/Funfacts/huayna.JPG) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     margin: 0px 0 0px 0px;
@@ -804,4 +804,122 @@ div#maincontent {
 .text-muted {
     color: #FBFAFC;
   font-size: 18px;
+}
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  padding-top:15px !important;
+  margin-top:15px !important;
+  /* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 100px;
+  padding-top:15px;
+}
+
+#quote-carousel .carousel-control.left {
+  left: -60px;
+  padding-top:15px;
+}
+#quote-carousel .carousel-control.right {
+  right: -60px;
+  padding-top:15px;
+}
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  position: relative;
+  bottom: 0px;
+  margin-right: -19px;
+
+}
+#quote-carousel .carousel-indicators li {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  cursor: pointer;
+  border: 0px solid #CCC;
+  border-radius: 50px;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border-color: #fea035;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height:80%;
+  min-height: 230px;
+  background-color: rgba(44, 62, 80, 0.45);
+  padding-right: 15px !important;
+}
+.carousel-text{
+  position: absolute;
+  top: 50% !important;
+  transform: translate(0%, 30%);
+  padding-right: 15px !important;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+/* For Carousel on Mobile*/
+@media (max-width: 767px) and (orientation: portrait) {
+  /* CSS goes here */
+  .carousel-text{
+    position: absolute;
+    transform: translate(0%, 0%);
+    padding-right: 15px !important;
+  }
+  .carousel-inner {
+    height: 80%;
+    min-height: 340px;
+  }
+  #quote-carousel .carousel-indicators li {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border: 0px solid #CCC;
+      border-radius: 30px;
+      opacity: 0.4;
+      overflow: hidden;
+      transition: all 0.5s;
+  }
+  #quote-carousel .carousel-indicators .active {
+      background: #333333;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      border-color: #fea035;
+      opacity: 1;
+      overflow: hidden;
+  }
+  #references{
+    height: 1250px;
+  }
+}
+.fancy {
+  margin: 15px;
+  padding: 15px;
 }
